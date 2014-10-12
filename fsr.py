@@ -12,6 +12,7 @@ GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(LED_PIN, GPIO.OUT)
 GPIO.setup(FSR_PIN, GPIO.IN)
+GPIO.output(LED_PIN, False)
 
 previous_value = 1
 
@@ -23,7 +24,7 @@ try:
     if (value == 0):
       if (previous_value != 0):
         GPIO.output(LED_PIN, not led_value)
-        os.system("/home/pi/bluetooth-fsr/keystroke")
+        os.system("/usr/local/bin/keystroke")
         time.sleep(1)
 
     previous_value = value

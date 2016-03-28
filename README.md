@@ -6,6 +6,7 @@ A stack which allows a force-sensitive resistor to act as a Bluetooth keyboard a
 
 * 1 x [Pi cobbler](https://www.adafruit.com/products/2029)
 * 1 x [FSR](https://www.adafruit.com/products/1071)
+* 1 x USB Bluetooth adapter
 * 1 x 10k resistor
 * 1 x LED (optional)
 

@@ -10,6 +10,11 @@ A stack which allows a force-sensitive resistor to act as a Bluetooth keyboard a
 * 1 x 10k resistor
 * 1 x LED (optional)
 
+```
+LED_PIN = 5
+FSR_PIN = 25
+```
+
 ## Compiling & Installing Dependencies
 
 ### Bluetooth Keyboard Daemon

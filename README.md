@@ -1,6 +1,12 @@
 # pitooth-fsr
 
-A stack which allows a force-sensitive resistor to act as a Bluetooth keyboard and send keystrokes when the resistor is depressed.
+Allows a force sensitive resistor to act as a Bluetooth keyboard and send a keystroke when depressed.
+
+## Usage
+
+* Pair Raspberry Pi with another device as a keyboard (e.g. a mobile phone)
+* When the FSR is depressed, `s` will be transmitted
+* Respond to the keystroke on the paired device (e.g. start/stop a timer)
 
 ## Hardware
 
@@ -37,9 +43,3 @@ Start the Bluetooth keyboard daemon:
 Start the FSR listener:
 
     sudo ./fsr.py
-
-## Usage
-
-* Pair the Pi with another device as a keyboard (e.g. a mobile phone)
-* When the FSR is depressed, an `s` key will be transmitted
-* Respond to the keystroke on the paired device (e.g. start/stop a timer)
